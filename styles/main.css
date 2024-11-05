@@ -214,9 +214,9 @@ html {
     padding: 18px 40px;
 }
 .header-airplane{
-    max-width: 670px;
     position: absolute;
+    max-width: 786px;
     bottom: 0;
-    top:-90px;
+    right: 37px;;
     width: 100%;
 }
