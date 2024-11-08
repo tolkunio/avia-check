@@ -51,6 +51,7 @@ html, body {
 html {
     font-family: 'Gilroy', sans-serif;
     font-weight: 400;
+    font-size: 10px;
 }
 .container{
     width: 100%;
@@ -80,7 +81,7 @@ html {
 }
 .header-input{
     width: 525px;
-    font-size: 15px;
+    font-size: 1.5rem;
     padding: 15px 13px;
     border: 1px solid rgba(59,61,64, .2);
     color: rgba(59,61,64, .5);
@@ -89,7 +90,7 @@ html {
 .header-contact{
     font-family: 'Inter', sans-serif;
     color: var(--text-dark-grey);
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 120%;
     display: flex;
     align-items: center;
@@ -122,7 +123,7 @@ html {
 
 }
 .header-nav-link{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Gilroy', sans-serif;
     color: var(--text-dark-grey);
     line-height: 120%;
@@ -146,7 +147,7 @@ html {
     cursor: pointer;
     text-align: center;
     font-family: 'Gilroy', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 120%;
 }
 .header-main{
@@ -155,7 +156,7 @@ html {
     padding-bottom: 177px;
 }
 .header-main-h1{
-    font-size: 50px;
+    font-size: 5rem;
     line-height: 120%;
     font-weight: 500;
 }
@@ -176,7 +177,7 @@ html {
     padding: 10px 12px;
     border-radius: 10px;
     background-color:#EEF4FB;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     color: #3B3D40;
     line-height: 120%;
@@ -202,7 +203,7 @@ html {
     max-width: 70%;
     padding-top: 30px;
     padding-bottom: 24px;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 120%;
     color: var(--text-dark-grey);
@@ -215,8 +216,33 @@ html {
 }
 .header-airplane{
     position: absolute;
-    max-width: 786px;
+    width: 53%;
     bottom: 0;
-    right: 37px;;
-    width: 100%;
+    right: 76px;
+}
+@media screen and (max-width: 1400px){
+    .container{
+        max-width: 95%;
+    }
+   .header-input{
+       display: none;
+   }
+   .header-airplane{
+      right: 40px
+   }
+}
+@media screen and (max-width: 1200px){
+    .header-main-h1{
+        font-size: 4.5rem;
+    }
+}
+@media screen and (max-width: 1100px){
+    .header-airplane{
+        right: 35px
+    }
+    .header-main-h1{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:375px ) {
 }
