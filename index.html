@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/main.css">
@@ -81,615 +81,725 @@
     <img src="assets/images/airplane.png" class="header-airplane" alt="airplane">
 </header>
 <body>
-<main class="main">
-    <section class="service-section">
-        <div class="container">
-            <div class="service-wrapper">
-                <div class="service-info">
-                    <h2 class="service-title">
-                        Мы – <span>сервис</span> по подготовке авиа документов в Вашу бухгалтерию:
-                    </h2>
-                    <div class="service-desc">
-                        <ul class="service-list">
-                            <li class="service-item">Посадочный талон</li>
-                            <li class="service-item">Справка о перелете</li>
-                            <li class="service-item">Маршрутная квинтанция</li>
-                        </ul>
-                        <div class="service-info-task">
-                            <img src="assets/icons/danger.svg" alt="service-task-danger">
-                            <p>Мы НЕ ЗАНИМАЕМСЯ продажей авиабилетов, регистрацией на рейс и тд</p>
-                        </div>
-                        <div class="service-info-task">
-                            <img src="assets/icons/tick-circle.svg" alt="service-task-ok">
-                            <p class="service-info-task-p">Мы просто делаем всю работу за ВАС</p>
-                        </div>
+<section class="service-section">
+    <div class="container">
+        <div class="service-wrapper">
+            <div class="service-info">
+                <h2 class="service-title">
+                    Мы – <span>сервис</span> по подготовке авиа документов в Вашу бухгалтерию:
+                </h2>
+                <div class="service-desc">
+                    <ul class="service-list">
+                        <li class="service-item">Посадочный талон</li>
+                        <li class="service-item">Справка о перелете</li>
+                        <li class="service-item">Маршрутная квинтанция</li>
+                    </ul>
+                    <div class="service-info-task">
+                        <img src="assets/icons/danger.svg" alt="service-task-danger">
+                        <p>Мы НЕ ЗАНИМАЕМСЯ продажей авиабилетов, регистрацией на рейс и тд</p>
                     </div>
-                </div>
-                <form class="form">
-                    <h2 class="service-form-h2">Остались вопросы?<br/> Свяжитесь с нами</h2>
-                    <p class="service-form-info">Задайте любой интересующий вас вопрос и наши специалисты свяжутся с
-                        вами в ближайшее время.</p>
-                    <div class="service-input-wrapper">
-                        <input class="service-input" type="text" id="name" name="name" placeholder="Имя">
-                        <input class="service-input" type="email" id="email" name="email" placeholder="Email">
-                        <input class="service-input" type="tel" id="phone" name="phone" placeholder="Телефон">
-                    </div>
-
-                    <button type="submit" class="btn btn-service">Оставить заявку</button>
-
-                    <div class="checkbox-block">
-                        <input type="checkbox" id="consent" name="consent" class="checkbox-consent" required>
-                        <label for="consent" class="service-consent">Нажимая на кнопку, вы даете согласие на обработку
-                            ваших персональных
-                            данных</label>
-                    </div>
-                </form>
-                <img src="assets/images/bg-service.png" class="service-bg" alt="service-bg"/>
-            </div>
-        </div>
-    </section>
-    <section class="talon-section">
-        <div class="container">
-            <div class="talon-grid">
-                <div class="talon-card">
-                    <h4 class="talon-card-h4">Посадочный талон</h4>
-                    <p class="talon-card-p">Восстановление утерянных посадочных талонов. Потеряли или выкинули
-                        посадочный талон? А бухгалтерия требует? Мы поможем!</p>
-                    <img src="assets/images/talon1.png" class="talon-img" alt="talon-first">
-                    <div class="talon-buttons">
-                        <button class="btn btn-talon-order">
-                            <img src="assets/icons/airplane.svg" alt="airplane">
-                            Заказать
-                        </button>
-                        <button class="btn btn-talon-details">Подробнее</button>
-                    </div>
-                    <img src="assets/icons/plus.svg" class="plus-icon" alt="plus-icon-first"/>
-                </div>
-                <div class="talon-card">
-                    <h4 class="talon-card-h4">Справка о перелете </h4>
-                    <p class="talon-card-p">
-                        В связи с утратой посадочного талона, либо необходимостью компенсации стоимости проезда или
-                        другой причиной, Вы можете оформить необходимую справку о перелёте в виде скана или
-                        оригинала. </p>
-                    <img src="assets/images/talon3.png" class="talon-img" alt="talon-first">
-                    <div class="talon-buttons">
-                        <button class="btn btn-talon-order">
-                            <img src="assets/icons/airplane.svg" alt="airplane">
-                            Заказать
-                        </button>
-                        <button class="btn btn-talon-details">Подробнее</button>
-                    </div>
-                    <img src="assets/icons/plus.svg" class="plus-icon" alt="plus-icon-second"/>
-                </div>
-                <div class="talon-card">
-                    <h4 class="talon-card-h4">Маршрутная квитанция</h4>
-                    <p class="talon-card-p">
-                        Маршрутная квитанция электронного билета является способом отчета перед бухгалтерией за
-                        командировку или иную поездку. Если Вы потеряли свою маршрутную квитанцию, то мы поможем ее
-                        восстановить или изготовим новую под любые ваши цели. </p>
-                    <img src="assets/images/talon3.png" class="talon-img" alt="talon-first">
-                    <div class="talon-buttons">
-                        <button class="btn btn-talon-order">
-                            <img src="assets/icons/airplane.svg" alt="airplane">
-                            Заказать
-                        </button>
-                        <button class="btn btn-talon-details">Подробнее</button>
-                    </div>
-                    <img src="assets/icons/plus.svg" class="plus-icon" alt="plus-icon-third"/>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="schema-section">
-        <div class="container">
-            <div class="schema-wrapper">
-                <div class="schema-work">
-                    <div class="schema-work-title">
-                        <h1 class="schema-work-title-h1">Схема работы</h1>
-                        <p class="schema-work-title-p">
-                            Перед отправкой оригиналов документов курьером или Почтой России, мы высылаем Вам сканы,
-                            чтобы Вы могли убедиться в качестве документов. Оплата заказа производится после проверки и
-                            согласования адреса доставки! В связи с участившимися случаями того, что клиенты не забирают
-                            свои заказы после их изготовления - возможна ПРЕДОПЛАТА!!!
-                        </p>
-                    </div>
-                    <div class="schema-work-process-grid">
-                        <div class="schema">
-                            <div class="schema-number">01.</div>
-                            <div class="schema-desc">Менеджер связывается с вами</div>
-                        </div>
-                        <div class="schema">
-                            <div class="schema-number">02.</div>
-                            <div class="schema-desc">Уточняем детали</div>
-                        </div>
-                        <div class="schema">
-                            <div class="schema-number">03.</div>
-                            <div class="schema-desc">Высылаем фото готового документа на проверку</div>
-                        </div>
-                        <div class="schema">
-                            <div class="schema-number">04.</div>
-                            <div class="schema-desc">Оплата</div>
-                        </div>
-                        <div class="schema">
-                            <div class="schema-number">05.</div>
-                            <div class="schema-desc">Получаете оригинал документа</div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="payments">
-                    <div class="payment-title">
-                        <div class="payment-title-h1">
-                            Принимаем к оплате
-                        </div>
-                        <p class="payment-title-p">
-                            Вы можете воспользоваться любым удобным для вас способом
-                        </p>
-                    </div>
-                    <div class="payments-icons">
-                        <div class="payment-icon">
-                            <img src="assets/images/payment-sber.png" alt="payment">
-                        </div>
-                        <div class="payment-icon">
-                            <img src="assets/images/payment-qiwi.png" alt="payment">
-                        </div>
-                        <div class="payment-icon">
-                            <img src="assets/images/payment.png" alt="payment">
-                        </div>
-                        <div class="payment-icon">
-                            <img src="assets/images/payment-megaphone.png" alt="payment">
-                        </div>
-                        <div class="payment-icon">
-                            <img src="assets/images/payment-paypal.png" alt="payment">
-                        </div>
-                        <div class="payment-icon">
-                            <img src="assets/images/payment-yandex.png" alt="payment">
-                        </div>
-
+                    <div class="service-info-task">
+                        <img src="assets/icons/tick-circle.svg" alt="service-task-ok">
+                        <p class="service-info-task-p">Мы просто делаем всю работу за ВАС</p>
                     </div>
                 </div>
             </div>
+            <form class="form">
+                <h2 class="service-form-h2">Остались вопросы?<br/> Свяжитесь с нами</h2>
+                <p class="service-form-info">Задайте любой интересующий вас вопрос и наши специалисты свяжутся с
+                    вами в ближайшее время.</p>
+                <div class="service-input-wrapper">
+                    <input class="service-input" type="text" id="name" name="name" placeholder="Имя">
+                    <input class="service-input" type="email" id="email" name="email" placeholder="Email">
+                    <input class="service-input" type="tel" id="phone" name="phone" placeholder="Телефон">
+                </div>
+
+                <button type="submit" class="btn btn-service">Оставить заявку</button>
+
+                <div class="checkbox-block">
+                    <input type="checkbox" id="consent" name="consent" class="checkbox-consent" required>
+                    <label for="consent" class="service-consent">Нажимая на кнопку, вы даете согласие на обработку
+                        ваших персональных
+                        данных</label>
+                </div>
+            </form>
+            <img src="assets/images/bg-service.png" class="service-bg" alt="service-bg"/>
         </div>
-    </section>
-    <section class="avia-section">
-        <div class="container">
-            <h2 class="avia-section-title">Авиакомпании</h2>
-            <div class="avia-section-grid">
-                <div class="avia-company">
-                    <img src="assets/images/avia-1.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">S7 Airlines</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
+    </div>
+</section>
+<section class="talon-section">
+    <div class="container">
+        <div class="talon-grid">
+            <div class="talon-card">
+                <h4 class="talon-card-h4">Посадочный талон</h4>
+                <p class="talon-card-p">Восстановление утерянных посадочных талонов. Потеряли или выкинули
+                    посадочный талон? А бухгалтерия требует? Мы поможем!</p>
+                <img src="assets/images/talon1.png" class="talon-img" alt="talon-first">
+                <div class="talon-buttons">
+                    <button class="btn btn-talon-order">
+                        <img src="assets/icons/airplane.svg" alt="airplane">
+                        Заказать
+                    </button>
+                    <button class="btn btn-talon-details">Подробнее</button>
                 </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-2.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Аэрофлот</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
+                <img src="assets/icons/plus.svg" class="plus-icon" alt="plus-icon-first"/>
+            </div>
+            <div class="talon-card">
+                <h4 class="talon-card-h4">Справка о перелете </h4>
+                <p class="talon-card-p">
+                    В связи с утратой посадочного талона, либо необходимостью компенсации стоимости проезда или
+                    другой причиной, Вы можете оформить необходимую справку о перелёте в виде скана или
+                    оригинала. </p>
+                <img src="assets/images/talon3.png" class="talon-img" alt="talon-first">
+                <div class="talon-buttons">
+                    <button class="btn btn-talon-order">
+                        <img src="assets/icons/airplane.svg" alt="airplane">
+                        Заказать
+                    </button>
+                    <button class="btn btn-talon-details">Подробнее</button>
                 </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-3.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">NordStar</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
+                <img src="assets/icons/plus.svg" class="plus-icon" alt="plus-icon-second"/>
+            </div>
+            <div class="talon-card">
+                <h4 class="talon-card-h4">Маршрутная квитанция</h4>
+                <p class="talon-card-p">
+                    Маршрутная квитанция электронного билета является способом отчета перед бухгалтерией за
+                    командировку или иную поездку. Если Вы потеряли свою маршрутную квитанцию, то мы поможем ее
+                    восстановить или изготовим новую под любые ваши цели. </p>
+                <img src="assets/images/talon3.png" class="talon-img" alt="talon-first">
+                <div class="talon-buttons">
+                    <button class="btn btn-talon-order">
+                        <img src="assets/icons/airplane.svg" alt="airplane">
+                        Заказать
+                    </button>
+                    <button class="btn btn-talon-details">Подробнее</button>
                 </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-4.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Победа</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
+                <img src="assets/icons/plus.svg" class="plus-icon" alt="plus-icon-third"/>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="schema-section">
+    <div class="container">
+        <div class="schema-wrapper">
+            <div class="schema-work">
+                <div class="schema-work-title">
+                    <h1 class="schema-work-title-h1">Схема работы</h1>
+                    <p class="schema-work-title-p">
+                        Перед отправкой оригиналов документов курьером или Почтой России, мы высылаем Вам сканы,
+                        чтобы Вы могли убедиться в качестве документов. Оплата заказа производится после проверки и
+                        согласования адреса доставки! В связи с участившимися случаями того, что клиенты не забирают
+                        свои заказы после их изготовления - возможна ПРЕДОПЛАТА!!!
+                    </p>
                 </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-5.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Utair</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
+                <div class="schema-work-process-grid">
+                    <div class="schema">
+                        <div class="schema-number">01.</div>
+                        <div class="schema-desc">Менеджер связывается с вами</div>
                     </div>
+                    <div class="schema">
+                        <div class="schema-number">02.</div>
+                        <div class="schema-desc">Уточняем детали</div>
+                    </div>
+                    <div class="schema">
+                        <div class="schema-number">03.</div>
+                        <div class="schema-desc">Высылаем фото готового документа на проверку</div>
+                    </div>
+                    <div class="schema">
+                        <div class="schema-number">04.</div>
+                        <div class="schema-desc">Оплата</div>
+                    </div>
+                    <div class="schema">
+                        <div class="schema-number">05.</div>
+                        <div class="schema-desc">Получаете оригинал документа</div>
+                    </div>
+
                 </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-6.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Уральские авиалинии</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
+            </div>
+            <div class="payments">
+                <div class="payment-title">
+                    <div class="payment-title-h1">
+                        Принимаем к оплате
                     </div>
+                    <p class="payment-title-p">
+                        Вы можете воспользоваться любым удобным для вас способом
+                    </p>
                 </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-7.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Россия</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
+                <div class="payments-icons">
+                    <div class="payment-icon">
+                        <img src="assets/images/payment-sber.png" alt="payment">
                     </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-8.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">NordWind</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
+                    <div class="payment-icon">
+                        <img src="assets/images/payment-qiwi.png" alt="payment">
                     </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-9.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Ямал</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
+                    <div class="payment-icon">
+                        <img src="assets/images/payment.png" alt="payment">
                     </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-10.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Якутия</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
+                    <div class="payment-icon">
+                        <img src="assets/images/payment-megaphone.png" alt="payment">
                     </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-11.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">RedWings</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
+                    <div class="payment-icon">
+                        <img src="assets/images/payment-paypal.png" alt="payment">
                     </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-12.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">RoyalFlight</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
+                    <div class="payment-icon">
+                        <img src="assets/images/payment-yandex.png" alt="payment">
                     </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-13.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Ямал</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-14.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">UVT aero</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-15.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Fly airlines</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-16.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Азимут</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-17.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title"><Р></Р>услайн</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-18.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Azur air</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-19.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Алроса</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-20.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Ангара</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-21.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Полярные авиалинии</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-22.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Nordavia</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-23.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Pegas Fly</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-24.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Вологодское авиапредпритие</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-25.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Глобус</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-26.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Belavia</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-27.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">ИрАэро</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-28.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Комиавиатранс</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-29.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Газпром Авиа</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-30.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Ижавиа</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-31.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Лукойл- Авиа</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-32.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Smartavia</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-33.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Саратовские авиалинии</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-34.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Северсталь</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-35.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Хабаровские авиалинии</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
-                </div>
-                <div class="avia-company">
-                    <img src="assets/images/avia-36.svg" class="avia-img" alt="avia-company">
-                    <div class="avia-company-bottom">
-                        <span class="avia-company-title">Чукот Авиа</span>
-                        <a href="#">
-                            <img src="assets/images/arrow.svg" alt="arrow-img">
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
-    <section class="review-section">
-        <div class="container">
-            <div class="review-wrapper">
-                <div class="review-title">
-                    <h3 class="review-title-h3">Отзывы о нас</h3>
-                    <div class="review-buttons">
-                        <button class="btn btn-arrow">
-                            <img src="assets/icons/arrow-left.svg" alt="arrow-left">
-                        </button>
-                        <button class="btn btn-arrow">
-                            <img src="assets/icons/arrow-right.svg" alt="arrow-right">
-                        </button>
-                    </div>
+    </div>
+</section>
+<section class="avia-section">
+    <div class="container">
+        <h2 class="avia-section-title">Авиакомпании</h2>
+        <div class="avia-section-grid">
+            <div class="avia-company">
+                <img src="assets/images/avia-1.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">S7 Airlines</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
                 </div>
-                <div class="review-content-grid">
-                    <div class="review-content">
-                        <img src="assets/images/stars.png" alt="review-stars" class="review-star">
-                        <h4 class="review-content-title">Нашел отличное решение</h4>
-                        <p class="review-content-p">
-                            Мне на работе положен льготный отпуск раз в два года, но ехать куда-то нет никакого желания,
-                            на даче время можно провести с гораздо большей пользой. В бухгалтерии говорят, что деньги
-                            выделены
-                            и если на компенсацию не подать документы, то они просто пропадут. Нашел отличное решение —
-                            заказал на avia-check.com комплект документов для
-                            отчетности перед бухгалтерией и без проблем получил компенсацию.
-                            Причем авиабилеты и посадочные талоны проверяли в авиакомпании и получили подтверждение. Так
-                            что через два года обязательно снова закажу, все-таки деньги лишними не бывают.
-                        </p>
-                        <div class="review-owner">
-                            <img src="assets/images/review-owner-1.png" alt="review-owner" class="review-owner-img">
-                            <div class="review-owner-desc">
-                                <span class="review-owner-name">Евгений Александрович</span>
-                                <div class="review-date">
-                                    <span class="review-date-label">Даты выполнения: </span>
-                                    <span class="review-date-value">12 марта 2024</span>
-                                </div>
-                                <span>г. Лабытнанги</span>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-2.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Аэрофлот</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-3.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">NordStar</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-4.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Победа</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-5.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Utair</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-6.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Уральские авиалинии</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-7.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Россия</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-8.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">NordWind</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-9.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Ямал</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-10.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Якутия</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-11.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">RedWings</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-12.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">RoyalFlight</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-13.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Ямал</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-14.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">UVT aero</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-15.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Fly airlines</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-16.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Азимут</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-17.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title"><Р></Р>услайн</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-18.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Azur air</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-19.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Алроса</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-20.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Ангара</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-21.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Полярные авиалинии</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-22.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Nordavia</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-23.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Pegas Fly</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-24.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Вологодское авиапредпритие</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-25.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Глобус</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-26.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Belavia</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-27.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">ИрАэро</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-28.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Комиавиатранс</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-29.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Газпром Авиа</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-30.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Ижавиа</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-31.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Лукойл- Авиа</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-32.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Smartavia</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-33.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Саратовские авиалинии</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-34.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Северсталь</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-35.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Хабаровские авиалинии</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+            <div class="avia-company">
+                <img src="assets/images/avia-36.svg" class="avia-img" alt="avia-company">
+                <div class="avia-company-bottom">
+                    <span class="avia-company-title">Чукот Авиа</span>
+                    <a href="#">
+                        <img src="assets/images/arrow.svg" alt="arrow-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="review-section">
+    <div class="container">
+        <div class="review-wrapper">
+            <div class="review-title">
+                <h3 class="review-title-h3">Отзывы о нас</h3>
+                <div class="review-buttons">
+                    <button class="btn btn-arrow">
+                        <img src="assets/icons/arrow-left.svg" alt="arrow-left">
+                    </button>
+                    <button class="btn btn-arrow">
+                        <img src="assets/icons/arrow-right.svg" alt="arrow-right">
+                    </button>
+                </div>
+            </div>
+            <div class="review-content-grid">
+                <div class="review-content">
+                    <img src="assets/images/stars.png" alt="review-stars" class="review-star">
+                    <h4 class="review-content-title">Нашел отличное решение</h4>
+                    <p class="review-content-p">
+                        Мне на работе положен льготный отпуск раз в два года, но ехать куда-то нет никакого желания,
+                        на даче время можно провести с гораздо большей пользой. В бухгалтерии говорят, что деньги
+                        выделены
+                        и если на компенсацию не подать документы, то они просто пропадут. Нашел отличное решение —
+                        заказал на avia-check.com комплект документов для
+                        отчетности перед бухгалтерией и без проблем получил компенсацию.
+                        Причем авиабилеты и посадочные талоны проверяли в авиакомпании и получили подтверждение. Так
+                        что через два года обязательно снова закажу, все-таки деньги лишними не бывают.
+                    </p>
+                    <div class="review-owner">
+                        <img src="assets/images/review-owner-1.png" alt="review-owner" class="review-owner-img">
+                        <div class="review-owner-desc">
+                            <span class="review-owner-name">Евгений Александрович</span>
+                            <div class="review-date">
+                                <span class="review-date-label">Даты выполнения: </span>
+                                <span class="review-date-value">12 марта 2024</span>
                             </div>
+                            <span>г. Лабытнанги</span>
                         </div>
                     </div>
-                    <div class="review-content">
-                        <img src="assets/images/stars.png" alt="review-stars" class="review-star">
-                        <h4 class="review-content-title">Молодцы ребята!</h4>
-                        <p class="review-content-p">
-                            Сделали полный комплект документов для отчетности перед бухгалтерией за командировку.
-                            И билеты и чеки из гостиницы — полный комплект. Молодцы ребята!
-                        </p>
-                        <div class="review-owner">
-                            <img src="assets/images/review-owner-2.png" alt="review-owner" class="review-owner-img">
-                            <div class="review-owner-desc">
-                                <span class="review-owner-name">Борис Иванович</span>
-                                <div class="review-date">
-                                    <span class="review-date-label">Даты выполнения: </span>
-                                    <span class="review-date-value">10 декабря 2022</span>
-                                </div>
-                                <span>г. Москва</span>
+                </div>
+                <div class="review-content">
+                    <img src="assets/images/stars.png" alt="review-stars" class="review-star">
+                    <h4 class="review-content-title">Молодцы ребята!</h4>
+                    <p class="review-content-p">
+                        Сделали полный комплект документов для отчетности перед бухгалтерией за командировку.
+                        И билеты и чеки из гостиницы — полный комплект. Молодцы ребята!
+                    </p>
+                    <div class="review-owner">
+                        <img src="assets/images/review-owner-2.png" alt="review-owner" class="review-owner-img">
+                        <div class="review-owner-desc">
+                            <span class="review-owner-name">Борис Иванович</span>
+                            <div class="review-date">
+                                <span class="review-date-label">Даты выполнения: </span>
+                                <span class="review-date-value">10 декабря 2022</span>
                             </div>
+                            <span>г. Москва</span>
                         </div>
                     </div>
-                    <div class="review-content">
-                        <img src="assets/images/stars.png" alt="review-stars" class="review-star">
-                        <h4 class="review-content-title">рекомендую всем!</h4>
-                        <p class="review-content-p">
-                            Отправили меня в командировку в Москву и Санкт-Петербург почти на две недели.
-                            Шесть перелетов, Якутск, Москва, СПб. И представляете? Уже дома из машины украли сумку с
-                            папкой,
-                            где были авиабилеты, посадочные талоны и чеки из гостиниц, необходимые для отчетности.
-                            В итоге авансовый отчет мне не подписывают. Хорошо что нашла решение —
-                            заказала на Avia-Check.com документы для отчетности и без проблем получила компенсацию.
-                            Авиабилеты, посадочные талоны, фискальные чеки — всё реальное, с подтверждением.
-                            Рекомендую всем!
-                        </p>
-                        <div class="review-owner">
-                            <img src="assets/images/review-owner-3.png" alt="review-owner" class="review-owner-img">
-                            <div class="review-owner-desc">
-                                <span class="review-owner-name">Светлана Юрьевна</span>
-                                <div class="review-date">
-                                    <span class="review-date-label">Даты выполнения: </span>
-                                    <span class="review-date-value">16 февраля 2021</span>
-                                </div>
-                                <span>г. Благовещенск</span>
+                </div>
+                <div class="review-content">
+                    <img src="assets/images/stars.png" alt="review-stars" class="review-star">
+                    <h4 class="review-content-title">рекомендую всем!</h4>
+                    <p class="review-content-p">
+                        Отправили меня в командировку в Москву и Санкт-Петербург почти на две недели.
+                        Шесть перелетов, Якутск, Москва, СПб. И представляете? Уже дома из машины украли сумку с
+                        папкой,
+                        где были авиабилеты, посадочные талоны и чеки из гостиниц, необходимые для отчетности.
+                        В итоге авансовый отчет мне не подписывают. Хорошо что нашла решение —
+                        заказала на Avia-Check.com документы для отчетности и без проблем получила компенсацию.
+                        Авиабилеты, посадочные талоны, фискальные чеки — всё реальное, с подтверждением.
+                        Рекомендую всем!
+                    </p>
+                    <div class="review-owner">
+                        <img src="assets/images/review-owner-3.png" alt="review-owner" class="review-owner-img">
+                        <div class="review-owner-desc">
+                            <span class="review-owner-name">Светлана Юрьевна</span>
+                            <div class="review-date">
+                                <span class="review-date-label">Даты выполнения: </span>
+                                <span class="review-date-value">16 февраля 2021</span>
                             </div>
+                            <span>г. Благовещенск</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="video-review-section">
-        <div class="container">
-            <div class="review-wrapper">
-                <div class="review-title">
-                    <h3 class="review-title-h3">Вопросы и ответы</h3>
-                    <div class="review-buttons">
-                        <button class="btn btn-arrow">
-                            <img src="assets/icons/arrow-left.svg" alt="arrow-left">
-                        </button>
-                        <button class="btn btn-arrow">
-                            <img src="assets/icons/arrow-right.svg" alt="arrow-right">
-                        </button>
+    </div>
+</section>
+<section class="video-review-section">
+    <div class="container">
+        <div class="review-wrapper">
+            <div class="review-title">
+                <h3 class="review-title-h3">Видео отзывы</h3>
+                <div class="review-buttons">
+                    <button class="btn btn-arrow">
+                        <img src="assets/icons/arrow-left.svg" alt="arrow-left">
+                    </button>
+                    <button class="btn btn-arrow">
+                        <img src="assets/icons/arrow-right.svg" alt="arrow-right">
+                    </button>
+                </div>
+            </div>
+            <div class="video-content-grid">
+                <div class="video-content">
+                    <img src="assets/images/video-thumbnail1.png" alt="Video Thumbnail">
+                    <div class="play-button">
+                        <img src="assets/icons/play-icon.svg" alt="play-icon">
                     </div>
                 </div>
-                <div class="video-content-grid">
+                <div class="video-content">
+                    <img src="assets/images/video-thumbnail2.png" alt="Video Thumbnail">
+                    <div class="play-button">
+                        <img src="assets/icons/play-icon.svg" alt="play-icon">
+                    </div>
+                </div>
+                <div class="video-content">
+                    <img src="assets/images/video-thumbnail3.png" alt="Video Thumbnail">
+                    <div class="play-button">
+                        <img src="assets/icons/play-icon.svg" alt="play-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq-section">
+    <div class="container">
+        <div class="review-wrapper">
+            <div class="review-title">
+                <h3 class="review-title-h3">Вопросы и ответы</h3>
+            </div>
+            <div class="faq-wrapper">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Обратился в авиакомпанию, они почему-то не восстанавливают посадочные талоны, можете ли
+                            помочь?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Авиакомпании действительно не восстанавливают посадочные талоны. По словам "совсем",
+                            вероятно, они не могут или не хотят этого делать. К сожалению, мы не можем повлиять на
+                            политику авиакомпаний. Мы восстанавливаем для Вас оригинальные посадочные талоны, если у Вас
+                            есть такая необходимость.</p>
+                    </div>
+                </div>
 
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Из какого материала изготовлены ваши талоны и насколько они оригинальные?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Наши талоны изготавливаются из высококачественных материалов, максимально приближенных к
+                            оригинальным. Мы гарантируем, что они будут выглядеть и функционировать как настоящие.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Проходят ли проверку ваши справки о перелёте?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, наши справки о перелете проходят тщательную проверку и соответствуют всем необходимым
+                            требованиям.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Я совершил перелёт 3 года назад, теперь бухгалтерия затребовала маршрутную квитанцию.
+                            Авиакомпания разводит руками. Можете ли вы её восстановить?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы можем восстановить маршрутную квитанцию даже за длительный период. Наши специалисты
+                            имеют доступ к архивным данным авиакомпаний и смогут предоставить вам необходимый
+                            документ.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Я потерял посадочный талон, бухгалтер требует подтверждение перелёта. В авиакомпании делают
+                            больше трёх недель, меня это не устраивает. Какую услугу мне заказать: оформить справку о
+                            перелёте или восстановить посадочный талон?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В данном случае мы рекомендуем вам оформить справку о перелете. Это более быстрый и удобный
+                            способ подтвердить ваш полет, чем ждать восстановления посадочного талона в
+                            авиакомпании.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-</main>
+    </div>
+</section>
+<section class="contact-us">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div>
+                <h3>Остались вопросы?</h3>
+                <span>Напишите нам!</span>
+            </div>
+            <button>Задать вопрос/button</button>
+            <img src="assets/images/airplane.png" alt="airplane" class="footer-airplane">
+        </div>
+    </div>
+</section>
 </body>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer-main"></div>
+            <div class="footer-menu"></div>
+            <div class="footer-form"></div>
+        </div>
+    </div>
+
+</footer>
 </html>
