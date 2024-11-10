@@ -790,25 +790,30 @@ html {
     font-weight: 400;
     color: var(--text-dark-grey);
 }
+
 /*video-reviews*/
-.video-review-section{
+.video-review-section {
     padding-top: 12rem;
 }
-.video-content-grid{
+
+.video-content-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
-.video-content{
+
+.video-content {
     position: relative;
     cursor: pointer;
 }
-.video-content img{
+
+.video-content img {
     width: 100%;
     height: auto;
     display: block;
 }
-.play-button{
+
+.play-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -821,14 +826,16 @@ html {
     align-items: center;
     transition: all 0.3s ease;
 }
+
 /*faq*/
-.faq-section{
+.faq-section {
     padding-top: 14rem;
 }
+
 .faq-wrapper {
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
 
 .faq-item {
@@ -861,33 +868,149 @@ html {
     padding: 15px;
     display: none;
 }
+
 /*contact-us*/
-.contact-us{
+.contact-us {
     padding-top: 10.4rem;
+    padding-bottom: 8.6rem;
 }
-.contact-wrapper{
+
+.contact-wrapper {
+    position: relative;
+    display: flex;
+    gap: 47px;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title-1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 9.6rem;
+    font-weight: 400;
+    color: var(--text-black);
 
 }
-.footer-airplane{
-    width: 15%;
+
+.contact-title-2 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 9.6rem;
+    font-weight: 400;
+    padding-left: 37rem;
 }
+
+.footer-airplane {
+    position: absolute;
+    width: 20%;
+    top: 150px;
+    left: 28px;
+}
+
+.btn-contact {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-white);
+    background-color: var(--main-blue);
+    border: none;
+    border-radius: 50%;
+    padding: 0 3.2rem 0 3.2rem;
+}
+
 /*footer*/
-.footer{
-    padding-top: 8.6rem;
+.footer {
+    padding-top: 6rem;
     background-color: #1F1F1F;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-white);
 }
-.footer-wrapper{
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 6rem;
+    border-bottom: 1px solid #C2CAD3;
+    column-gap: 5rem;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer-logo{
+    width: 35%;
+}
+.footer-mail-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-mail {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.footer-icons{
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.footer-sms {
 
 }
-.footer-main{
+
+.footer-menu-flex {
+    display: flex;
+    align-items: center;
+    gap:7.8rem;
+}
+.footer-main-flex{
+    display: flex;
+    flex-direction: column;
+    gap:24px
+}
+
+.footer-form {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:24px;
+}
+.footer-input{
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 15px 13px;
+    color: rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    background: transparent;
+}
+.form-btn{
+    width: 80%;
+    border: 1px solid var(--main-white);
+    color: var(--main-white);
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 10px 36px;
+    background: var(--main-blue);
+}
+.copyright{
+    display: block;
+    margin: 30px 0 60px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #BDBDBD;
+    font-weight: 400;
 
 }
-.footer-menu{
 
-}
-.footer-form{
-
-}
 @media screen and (max-width: 1400px) {
     .container {
         max-width: 95%;
