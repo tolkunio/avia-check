@@ -41,7 +41,7 @@ a{
     padding: 0;
     margin: 0;
 }
-h1,h2,h3,p {
+h1,h2,h3,h4,p {
     margin: 0;
     padding: 0;
 }
@@ -153,7 +153,10 @@ img {
     border-style: none;
 }
 
-/* Forms
+ul {
+    margin: 0;
+    padding: 0;
+}/* Forms
    ========================================================================== */
 
 /**
