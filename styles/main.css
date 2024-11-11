@@ -79,9 +79,9 @@ html {
 .header-top-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 25px 0 15px 0;
     border-bottom: 1px solid rgba(59, 61, 64, .5);
+    justify-content: space-between;
 }
 
 .header-content {
@@ -175,6 +175,8 @@ html {
     max-width: 64%;
     padding-top: 50px;
     padding-bottom: 177px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-main-h1 {
@@ -184,9 +186,10 @@ html {
 }
 
 .header-main-blocks {
+    position: relative;
+    z-index: 2;
     padding-top: 40px;
     display: flex;
-    align-items: center;
     gap: 20px;
     max-width: 91%;
 }
@@ -198,7 +201,7 @@ html {
     gap: 12px;
     width: 100%;
     max-width: 515px;
-    padding: 10px 12px;
+    padding: 15px 12px;
     border-radius: 10px;
     background-color: #EEF4FB;
     font-size: 1.6rem;
@@ -229,6 +232,7 @@ html {
 }
 
 .header-main-desc {
+    z-index: 2;
     max-width: 70%;
     padding-top: 30px;
     padding-bottom: 24px;
@@ -239,8 +243,11 @@ html {
 }
 
 .btn-header-main {
+    z-index: 2;
+    width: 40%;
     background-color: var(--main-blue);
     border: none;
+    border-radius: 4px;
     color: var(--main-white);
     padding: 18px 40px;
 }
@@ -497,13 +504,46 @@ html {
     line-height: 120%;
 }
 
-.talon-img {
-    padding-top: 85px;
+.talon-img-first {
+    clip-path: polygon(0 0, 100% 0%, 100% 58%, 0 56%);
+    z-index: 1;
+    position: absolute;
+    top: 215px;
+    left: 40px;
+    width: 85%;
+}
+
+.talon-img-second {
+    clip-path: polygon(1% 0, 100% 0%, 100% 52%, 0 48%);
+    position: absolute;
+    top: 205px;
+    left: 40px;
+    width: 80%;
+}
+
+.talon-img-third {
+    clip-path: polygon(1% 0, 100% 0%, 100% 60%, 0 59%);
+    z-index: 1;
+    position: absolute;
+    top: 215px;
+    left: 40px;
+    width: 80%;
 }
 
 .talon-buttons {
+    padding-top: 20rem;
+    padding-bottom: 4rem;
+    z-index: 2;
     display: flex;
-    justify-content: space-between;
+    gap:20px;
+}
+
+.first {
+    margin-top: 40px;
+}
+
+.third {
+    padding-top: 18rem;
 }
 
 .plus-icon {
@@ -569,21 +609,20 @@ html {
 .schema-work-process-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
 
+.avia-section-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .schema {
     padding: 19px 15px 21px 19px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 12px;
     color: var(--text-dark-grey);
     border-left: 1px solid var(--text-dark-grey);
-}
-
-.schema-number {
-    font-size: 7rem;
-    font-weight: 300;
 }
 
 .schema-desc {
@@ -649,8 +688,9 @@ html {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
+    row-gap: 20px;
     column-gap: 30px;
+    grid-auto-rows: 220px;
 }
 
 .avia-company {
@@ -659,7 +699,7 @@ html {
 }
 
 .avia-img {
-    padding: 24px 20px;
+    padding: 30px 20px;
 }
 
 .avia-company-title {
@@ -674,6 +714,10 @@ html {
     justify-content: space-between;
     padding: 21px 26px 27px;
     background-color: rgba(231, 231, 231, .5);
+}
+
+.custom-padding {
+    padding: 15px 26px 15px;
 }
 
 /*review*/
@@ -696,7 +740,8 @@ html {
 .review-title-h3 {
     font-size: 48px;
     font-weight: 500;
-    color: var(--text-black)
+    color: var(--text-black);
+    flex: 1;
 }
 
 .review-buttons {
@@ -718,7 +763,7 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 550px;
-    grid-gap: 0;
+    gap: 0;
 }
 
 .review-content {
@@ -743,11 +788,11 @@ html {
 }
 
 .review-content-p {
+    flex: 1;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: var(--text-light-grey);
-    height: 340px;
 }
 
 .review-owner {
@@ -878,7 +923,7 @@ html {
 .contact-wrapper {
     position: relative;
     display: flex;
-    gap: 47px;
+    justify-content: space-between;
 }
 
 .titles {
@@ -931,7 +976,7 @@ html {
 
 .footer-wrapper {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 6rem;
     border-bottom: 1px solid #C2CAD3;
     column-gap: 5rem;
@@ -942,10 +987,12 @@ html {
     flex-direction: column;
     gap: 24px;
 }
-.footer-logo{
+
+.footer-logo {
     width: 35%;
 }
-.footer-mail-flex{
+
+.footer-mail-flex {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -956,12 +1003,14 @@ html {
     align-items: center;
     gap: 7px;
 }
-.footer-icons{
+
+.footer-icons {
     padding-top: 16px;
     display: flex;
     align-items: center;
     gap: 24px;
 }
+
 .footer-sms {
 
 }
@@ -969,12 +1018,13 @@ html {
 .footer-menu-flex {
     display: flex;
     align-items: center;
-    gap:7.8rem;
+    gap: 7.8rem;
 }
-.footer-main-flex{
+
+.footer-main-flex {
     display: flex;
     flex-direction: column;
-    gap:24px
+    gap: 24px
 }
 
 .footer-form {
@@ -982,18 +1032,21 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:24px;
+    gap: 24px;
 }
-.footer-input{
-    width: 80%;
+
+.footer-input {
+    width: 70%;
     font-size: 1.5rem;
     padding: 15px 13px;
     color: rgba(255, 255, 255, .5);
     border-radius: 20px;
     background: transparent;
+    border: 1px solid var(--main-white)
 }
-.form-btn{
-    width: 80%;
+
+.form-btn {
+    width: 75%;
     border: 1px solid var(--main-white);
     color: var(--main-white);
     border-radius: 4px;
@@ -1001,7 +1054,8 @@ html {
     padding: 10px 36px;
     background: var(--main-blue);
 }
-.copyright{
+
+.copyright {
     display: block;
     margin: 30px 0 60px 0;
     text-align: center;
@@ -1020,6 +1074,10 @@ html {
         display: none;
     }
 
+    .header-main {
+        padding-bottom: 120px;
+    }
+
     .header-airplane {
         right: 40px
     }
@@ -1029,6 +1087,44 @@ html {
         left: 226px;
         max-width: 42%;
     }
+
+    .talon-card {
+        padding: 20px 0 0 15px;
+    }
+
+    .third {
+        padding-top: 14.3rem;
+    }
+
+    .btn-talon-order {
+        padding: 18px 40px;
+    }
+
+    .btn-talon-details {
+        padding: 18px 40px;
+    }
+
+    .avia-section-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .review-content-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 60%;
+    }
+
+    .contact-wrapper {
+        gap: 10px;
+    }
+
+    .contact-title-1, .contact-title-2 {
+        font-size: 7rem;
+    }
+
+    .footer-airplane {
+        width: 24%;
+        top: 73px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1036,19 +1132,84 @@ html {
         font-size: 4.5rem;
     }
 
+    .form {
+        width: 40%
+    }
+
+    .payments {
+        gap: 1.6rem
+    }
+
+    .payment-icon {
+        padding: 6px 30px;
+    }
+
+    .schema-work-process-grid {
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .avia-section-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-section {
+        padding-top: 4rem;
+        padding-bottom: 7rem;
+    }
+
     .service-bg {
         top: 106px;
         max-width: 38%;
     }
+
+    .talon-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .talon-img-first {
+        top: 190px;
+    }
+
+    .talon-img-second {
+        top: 168px;
+    }
+
+    .talon-img-third {
+        top: 190px;
+    }
+
+    .third {
+        padding-top: 22rem;
+    }
+
+    .contact-title-1, .contact-title-2 {
+        font-size: 6rem;
+    }
+
+    .footer-airplane {
+        width: 22%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
+    .header-main {
+        padding-bottom: 48px;
+    }
+
     .header-airplane {
         right: 35px
     }
 
     .header-main-h1 {
         font-size: 3.5rem;
+    }
+
+    .payment-icon {
+        padding: 6px 10px;
+    }
+
+    .schema-work-process-grid {
+        grid-template-columns: repeat(3, 1fr)
     }
 
     .service-list {
@@ -1058,15 +1219,270 @@ html {
     .service-bg {
         display: none;
     }
+
+    .third {
+        padding-top: 23rem;
+    }
+
+    .review-wrapper {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .review-title {
+        flex-direction: row;
+    }
+
+    .review-star {
+        width: 30%;
+    }
+
+    .review-content-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 33.7%;
+        gap: 30px;
+    }
+
+    .review-content {
+        padding: 20px;
+    }
+
+    .contact-us {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+    }
+
+    .contact-title-1, .contact-title-2 {
+        font-size: 5rem;
+    }
+
+    .footer-airplane {
+        width: 18%;
+    }
+
+    .form {
+        width: 50%;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
+    .plus-icon{
+        display: none;
+    }
+    .header-main-h1 {
+        text-align: center;
+    }
 
+    .header-main-blocks {
+        flex-direction: column;
+    }
 
+    .header-main-desc {
+        text-align: center;
+        max-width: 70%;
+    }
+
+    .header-main {
+        align-items: center;
+        max-width: 100%;
+        padding-bottom: 220px
+    }
+
+    .header-airplane {
+        bottom: 6px;
+        right: 78px;
+    }
+
+    .schema-work-title {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .schema-work-process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .talon-grid {
+        justify-items: center; /* Центрирование по горизонтали */
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 70px;
+    }
+    .talon-img-first{
+        width: 70%;
+        top: 180px;
+        left: 101px;
+    }
+    .talon-img-second{
+        width: 65%;
+        top: 154px;
+        left: 101px;
+    }
+    .talon-img-third{
+        width: 70%;
+        top: 170px;
+        left: 101px;
+    }
+    .schema-wrapper {
+        gap: 8rem;
+    }
+
+    .payments {
+        flex-direction: column;
+    }
+
+    .payment-title {
+        align-items: center;
+    }
+
+    .payment-title-p {
+        max-width: 100%;
+    }
+    .payments-icons{
+        gap: 25px;
+    }
+    .service-desc {
+        padding-left: 1rem;
+    }
+
+    .service-info {
+        max-width: 50%;
+    }
+
+    .service-info-task {
+        max-width: 90%;
+    }
+
+    .service-list {
+        padding-bottom: 2rem;
+    }
+
+    .talon-card {
+        align-items: center;
+        width: 64%;
+        border-right: 1px solid var(--main-white);
+        padding: 20px 20px 0 15px;
+    }
+}
+
+/* Планшеты */
+@media screen and (max-width: 768px) {
+    .header-logo{
+      padding-left: 38%;
+    }
+    .header-content{
+        display: none;
+    }
+    .header-main {
+        padding-top: 25px;
+        padding-bottom:62px;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .header-nav-links {
+        flex-direction: column;
+    }
+
+    .payments {
+        flex-direction: column;
+    }
+
+    .service-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-info {
+        padding: 10px;
+        max-width: 100%;
+        gap: 25px;
+    }
+
+    .service-list {
+        padding-bottom: 2rem;
+    }
+
+    .service-desc {
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .schema-work-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .talon-grid{
+        gap: 25px;
+    }
+    .talon-img-first{
+        width: 70%;
+    }
+    .talon-img-second{
+        width: 70%;
+    }
+    .talon-img-third{
+        width: 70%;
+    }
+    .btn-contact{
+        display: none;
+    }
+    .footer-airplane {
+        width: 27%;
+        top:36px;
+    }
+    .footer-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 1rem;
+        column-gap: 1rem;
+    }
+    .contact-title-1, .contact-title-2{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 575px ) {
+    .header-main{
+        padding-bottom: 45px;
+    }
+    .schema-work-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 1rem;
+        column-gap: 1rem;
+    }
+    .footer-form{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 375px ) {
-
+    .header-logo{
+        width: 40%;
+    }
+    .header-content{
+      display: none;
+    }
+    .header-nav{
+        display: none;
+    }
+    .header-airplane {
+        bottom: 10px;
+        right: 78px;
+    }
+    .footer-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 1rem;
+        column-gap: 1rem;
+    }
 }
 
 
