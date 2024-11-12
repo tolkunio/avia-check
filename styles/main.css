@@ -126,6 +126,22 @@ html {
     border-radius: 50%;
 }
 
+.burger-btn {
+    display: none;
+    box-sizing: border-box;
+    padding: 6px 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.6rem;
+    line-height: 120%;
+    border: none;
+    background: transparent;
+}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -134,10 +150,10 @@ html {
 }
 
 .header-nav-links {
+    padding: 16px 18px;
     display: flex;
     align-items: center;
     gap: 24px;
-
 }
 
 .header-nav-link {
@@ -148,18 +164,51 @@ html {
     font-weight: 500;
 }
 
-.btn-header {
-    border: 1px solid var(--main-blue);
-    color: var(--main-blue);
+.header-mobile-nav {
+    display: none;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 20px 0 0 20px;
+    height: 100vh;
+}
+.header-mobile-nav-links {
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.header-mobile-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 20px 0;
+}
+.header-mobile-content{
+    display: none;
+    flex-direction: column;
+    align-items:center;
+    gap: 28px;
+}
+.btn-header-mobile{
+    z-index: 2;
+    width: 50%;
+    background-color: var(--main-blue);
+    border: none;
     border-radius: 4px;
-    font-weight: 500;
-    padding: 10px 36px;
-    background: transparent;
+    color: var(--main-white);
+    padding: 18px 40px;
+}
+
+.active {
+    display: flex;
 }
 
 .btn {
     box-sizing: border-box;
-    padding: 6px 24px;
+    padding: 6px 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,6 +218,14 @@ html {
     font-family: 'Gilroy', sans-serif;
     font-size: 1.6rem;
     line-height: 120%;
+}
+.btn-header {
+    border: 1px solid var(--main-blue);
+    color: var(--main-blue);
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 10px 36px;
+    background: transparent;
 }
 
 .header-main {
@@ -535,7 +592,7 @@ html {
     padding-bottom: 4rem;
     z-index: 2;
     display: flex;
-    gap:20px;
+    gap: 20px;
 }
 
 .first {
@@ -1128,6 +1185,10 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+
     .header-main-h1 {
         font-size: 4.5rem;
     }
@@ -1192,6 +1253,11 @@ html {
 }
 
 @media screen and (max-width: 1100px) {
+
+    .container {
+        max-width: 85%;
+    }
+
     .header-main {
         padding-bottom: 48px;
     }
@@ -1266,9 +1332,14 @@ html {
 }
 
 @media screen and (max-width: 990px) {
-    .plus-icon{
+    .container {
+        max-width: 80%
+    }
+
+    .plus-icon {
         display: none;
     }
+
     .header-main-h1 {
         text-align: center;
     }
@@ -1308,21 +1379,25 @@ html {
         grid-template-columns: repeat(1, 1fr);
         gap: 70px;
     }
-    .talon-img-first{
+
+    .talon-img-first {
         width: 70%;
         top: 180px;
         left: 101px;
     }
-    .talon-img-second{
+
+    .talon-img-second {
         width: 65%;
         top: 154px;
         left: 101px;
     }
-    .talon-img-third{
+
+    .talon-img-third {
         width: 70%;
         top: 170px;
         left: 101px;
     }
+
     .schema-wrapper {
         gap: 8rem;
     }
@@ -1338,9 +1413,11 @@ html {
     .payment-title-p {
         max-width: 100%;
     }
-    .payments-icons{
+
+    .payments-icons {
         gap: 25px;
     }
+
     .service-desc {
         padding-left: 1rem;
     }
@@ -1367,24 +1444,33 @@ html {
 
 /* Планшеты */
 @media screen and (max-width: 768px) {
-    .header-logo{
-      padding-left: 38%;
+    .container {
+        max-width: 75%;
     }
-    .header-content{
+
+    .header-logo {
+        padding-right: 36%;
+    }
+
+    .header-content {
         display: none;
     }
+
     .header-main {
         padding-top: 25px;
-        padding-bottom:62px;
+        padding-bottom: 62px;
     }
 
     .header-nav {
-        flex-direction: column;
-        gap: 24px;
+        display: none;
     }
 
     .header-nav-links {
         flex-direction: column;
+    }
+
+    .burger-btn {
+        display: flex;
     }
 
     .payments {
@@ -1418,67 +1504,98 @@ html {
     .schema-work-process-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .talon-grid{
+
+    .talon-grid {
         gap: 25px;
     }
-    .talon-img-first{
+
+    .talon-img-first {
         width: 70%;
     }
-    .talon-img-second{
+
+    .talon-img-second {
         width: 70%;
     }
-    .talon-img-third{
+
+    .talon-img-third {
         width: 70%;
     }
-    .btn-contact{
+
+    .btn-contact {
         display: none;
     }
+
     .footer-airplane {
         width: 27%;
-        top:36px;
+        top: 36px;
     }
-    .footer-wrapper{
+
+    .footer-wrapper {
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 1rem;
         column-gap: 1rem;
     }
-    .contact-title-1, .contact-title-2{
+
+    .contact-title-1, .contact-title-2 {
         font-size: 3rem;
     }
 }
 
 @media screen and (max-width: 575px ) {
-    .header-main{
+    .container {
+        max-width: 70%;
+    }
+
+    .header-content {
+        display: none;
+    }
+
+    .header-main {
         padding-bottom: 45px;
     }
+
     .schema-work-process-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .footer-wrapper{
+
+    .footer-wrapper {
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 1rem;
         column-gap: 1rem;
     }
-    .footer-form{
+
+    .footer-form {
         display: none;
     }
 }
 
 @media screen and (max-width: 375px ) {
-    .header-logo{
+    .container {
+        max-width: 65%;
+    }
+
+    .header-logo {
         width: 40%;
     }
-    .header-content{
-      display: none;
-    }
-    .header-nav{
+
+    .header-content {
         display: none;
     }
+
+    .header-nav {
+        display: none;
+    }
+    .btn-header-main{
+        width: 38%;
+        padding: 10px 20px;
+    }
+
     .header-airplane {
         bottom: 10px;
         right: 78px;
     }
-    .footer-wrapper{
+
+    .footer-wrapper {
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 1rem;
         column-gap: 1rem;

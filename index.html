@@ -9,6 +9,9 @@
 <header class="header">
     <div class="container">
         <div class="header-top-wrapper">
+            <button class="burger-btn" id="burgerButton">
+                <img src="assets/icons/burger-icon.svg" alt="burger-icon" class="burger-icon">
+            </button>
             <img src="assets/icons/logo.svg" alt="header-logo" class="header-logo">
             <div class="header-content">
                 <input type="text" placeholder="Поиск" class="header-input">
@@ -33,6 +36,7 @@
                     </a>
                 </div>
             </div>
+
         </div>
         <div class="header-nav">
             <div class="header-nav-links">
@@ -42,6 +46,52 @@
                 <a href="#" class="header-nav-link">Маршрутная квинтанция</a>
             </div>
             <button class="btn btn-header">Оставить заявку</button>
+        </div>
+        <div class="header-mobile-nav" id="header-mobile-nav">
+            <div class="header-mobile-nav-links">
+                <div class="header-mobile-link">
+                    <img src="assets/icons/mobile-home.svg" alt="mobile-home" class="mobile-icon"/>
+                    <a href="#" class="header-nav-link">Главная</a>
+                </div>
+                <div class="header-mobile-link">
+                    <img src="assets/icons/mobile-talon.svg" alt="mobile-talon" class="mobile-icon"/>
+                    <a href="#" class="header-nav-link">Посадочный талон</a>
+                </div>
+                <div class="header-mobile-link">
+                    <img src="assets/icons/mobile-receipt.svg" alt="mobile-receipt" class="mobile-icon"/>
+                    <a href="#" class="header-nav-link">Cправка о перелете</a>
+                </div>
+                <div class="header-mobile-link">
+                    <img src="assets/icons/mobile-document.svg" alt="mobile-document" class="mobile-icon"/>
+                    <a href="#" class="header-nav-link">Маршрутная квинтанция</a>
+                </div>
+            </div>
+            <div class="header-mobile-content" id="header-mobile-content">
+                <div class="header-icons">
+                    <a href="#" class="header-circle">
+                        <img src="assets/icons/vk.svg" alt="vk">
+                    </a>
+                    <a href="#" class="header-circle">
+                        <img src="assets/icons/whatsapp.svg" alt="whatsapp">
+                    </a>
+                    <a href="#" class="header-circle">
+                        <img src="assets/icons/youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#" class="header-circle">
+                        <img src="assets/icons/telegram.svg" alt="tg">
+                    </a>
+                </div>
+                <div class="header-contact">
+                    <img src="assets/icons/sms.svg" alt="sms"> avia_check@mail.ru
+                </div>
+                <div class="header-contact">
+                    <img src="assets/icons/phone.svg" alt="phone">+7(938)474 22 07
+                </div>
+                <button class="btn btn-header-mobile">
+                    <img src="assets/icons/airplane.svg" alt="airplane">
+                    Оставить заявку
+                </button>
+            </div>
         </div>
         <div class="header-main">
             <h1 class="header-main-h1">
@@ -838,7 +888,7 @@
             </div>
             <div class="footer-form">
                 <input type="text" placeholder="Поиск" class="footer-input">
-                <button class=" btn form-btn">Оставить заявку</button>
+                <button class="btn form-btn">Оставить заявку</button>
             </div>
         </div>
         <span class="copyright">Copyright 2024. Avia-check. All Rights Reserved </span>
@@ -846,3 +896,13 @@
 
 </footer>
 </html>
+<script>
+    const burgerButton = document.getElementById('burgerButton');
+    const headerMenu = document.getElementById('header-mobile-nav');
+    const headerContent=document.getElementById('header-mobile-content');
+
+    burgerButton.addEventListener('click', () => {
+        headerMenu.classList.toggle('active');
+        headerContent.classList.toggle('active');
+    });
+</script>
