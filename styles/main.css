@@ -171,11 +171,12 @@ html {
     padding: 20px 0 0 20px;
     height: 100vh;
 }
+
 .header-mobile-nav-links {
     padding: 16px 18px;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
 .header-mobile-link {
@@ -186,13 +187,15 @@ html {
     border-bottom: 1px solid #E5E5E5;
     padding: 20px 0;
 }
-.header-mobile-content{
+
+.header-mobile-content {
     display: none;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     gap: 28px;
 }
-.btn-header-mobile{
+
+.btn-header-mobile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,6 +231,7 @@ html {
     font-size: 1.6rem;
     line-height: 120%;
 }
+
 .btn-header {
     border: 1px solid var(--main-blue);
     color: var(--main-blue);
@@ -544,7 +548,7 @@ html {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     gap: 50px;
-    grid-auto-rows: 538px;
+    grid-auto-rows: 514px;
 }
 
 .talon-card {
@@ -556,9 +560,11 @@ html {
     color: var(--main-white);
     border-left: 1px solid var(--main-white);
 }
-.first{
+
+.first {
     padding-top: 7.5rem;
 }
+
 .talon-card-h4 {
     font-size: 32px;
     font-weight: 500;
@@ -572,18 +578,12 @@ html {
     font-weight: 400;
     line-height: 120%;
 }
+.talon-img{
+    width: 252px;
+    height: 144px;
 
-.talon-img-first {
-   max-width: 100%;
 }
 
-.talon-img-second {
-    clip-path: polygon(1% 0, 100% 0%, 100% 52%, 0 48%);
-}
-
-.talon-img-third {
-    clip-path: polygon(1% 0, 100% 0%, 100% 60%, 0 59%);
-}
 
 .talon-buttons {
     display: flex;
@@ -655,6 +655,7 @@ html {
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
+
 .schema {
     padding: 19px 15px 21px 19px;
     display: flex;
@@ -1110,6 +1111,7 @@ html {
     .container {
         max-width: 95%;
     }
+
     .header-input {
         display: none;
     }
@@ -1184,6 +1186,7 @@ html {
     .payment-icon {
         padding: 6px 30px;
     }
+
     .schema-work-process-grid {
         grid-template-columns: repeat(4, 1fr)
     }
@@ -1205,15 +1208,6 @@ html {
     .talon-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .talon-img-second {
-        top: 168px;
-    }
-
-    .talon-img-third {
-        top: 190px;
-    }
-
 
     .contact-title-1, .contact-title-2 {
         font-size: 6rem;
@@ -1298,7 +1292,8 @@ html {
     .form {
         width: 50%;
     }
-    .review-content-grid{
+
+    .review-content-grid {
         grid-auto-rows: 50%;
     }
 }
@@ -1335,7 +1330,8 @@ html {
         bottom: 6px;
         right: 78px;
     }
-    .schema-section{
+
+    .schema-section {
         padding-top: 3rem;
     }
 
@@ -1343,22 +1339,11 @@ html {
         flex-direction: column;
         gap: 20px;
     }
-    .schema-work-title-p{
+
+    .schema-work-title-p {
         text-align: center;
         font-size: 2rem;
         width: 100%;
-    }
-
-    .talon-img-second {
-        width: 65%;
-        top: 182px;
-        left:73px;
-    }
-
-    .talon-img-third {
-        width: 70%;
-        top: 200px;
-        left: 33px;
     }
 
     .schema-wrapper {
@@ -1381,13 +1366,16 @@ html {
     .payments-icons {
         gap: 25px;
     }
-    .avia-section, .review-section, .faq-section{
+
+    .avia-section, .review-section, .faq-section {
         padding-top: 6rem;
     }
+
     .contact-us {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+
     .service-desc {
         padding-left: 1rem;
     }
@@ -1409,29 +1397,40 @@ html {
         width: 100%;
         padding: 20px 20px 0 15px;
     }
-    .talon-buttons{
+
+    .talon-buttons {
         width: 80%;
         flex-direction: column;
     }
-    .avia-section-grid{
-        grid-template-columns: repeat(2, 1fr);
+
+    .avia-section-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .footer{
+
+    .footer {
         padding-top: 3rem;
     }
-    .footer-wrapper{
+
+    .footer-wrapper {
         padding-bottom: 1rem;
     }
+
     .footer-airplane {
         width: 27%;
         top: 75px;
     }
-    .video-review-section{
+
+    .video-review-section {
         padding-top: 25rem;
     }
-    .btn-contact{
+
+    .contact-title-2{
+        padding-left: 23rem;
+    }
+    .btn-contact {
         padding: 0 1.2rem 0 1.2rem;
     }
+
 }
 
 /* Планшеты */
@@ -1484,22 +1483,29 @@ html {
         padding-left: 1rem;
         padding-bottom: 1rem;
     }
-    .review-content-grid{
-        grid-auto-rows: 38%;
+    .review-section{
+        padding-bottom: 25rem;
+    }
+    .review-content-grid {
+        grid-auto-rows: 45%;
     }
 
     .form {
         width: 70%;
     }
-    .talon-card{
+
+    .talon-card {
         width: 90%;
     }
+
     .schema-work-process-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .schema-wrapper {
         gap: 4rem;
     }
+
     .avia-company {
         width: 100%;
     }
@@ -1511,7 +1517,8 @@ html {
         column-gap: 30px;
         row-gap: 30px;
     }
-    .payments-icons{
+
+    .payments-icons {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1533,26 +1540,70 @@ html {
     .contact-title-1, .contact-title-2 {
         font-size: 3rem;
     }
+    .contact-title-2{
+        padding-left: 25rem;
+    }
 }
 
 @media screen and (max-width: 575px ) {
     .header-content {
         display: none;
     }
+    .header-logo {
+        padding-right: 4%;
+    }
 
     .header-main {
-        padding-bottom: 145px;
+        padding-bottom: 104px;
     }
-    .header-main-desc{
-        width: 100%;
+
+    .header-main-desc {
+        max-width: 100%;
+        font-size: 1.4rem;
     }
-    .btn-header-main{
-        width: 45%;
-        padding: 14px 8px;
+
+    .header-airplane {
+        width: 86%;
+        bottom: 9px;
+        right: 28px;
+    }
+
+    .header-main-h1 {
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+
+    .btn-header-main {
+        width: 90%;
+        padding: 14px 0;
+        background-color: #45B2F1;
+    }
+    .talon-section{
+        padding-top: 0;
+    }
+    .talon-grid {
+        grid-auto-rows: 665px;
+        gap:10rem;
+    }
+    .service-title {
+        font-size: 2.4rem;
+    }
+    .service-info-task-p {
+        font-size: 1.6rem;
     }
     .service-section {
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+    .service-info-task {
+        max-width: 100%;
+    }
+    .service-form-h2 {
+        font-size: 2rem;
+    }
+
+    .service-form-info {
+        font-size: 1.3rem;
     }
 
     .footer-wrapper {
@@ -1564,10 +1615,12 @@ html {
     .footer-form {
         display: none;
     }
-    .video-content-grid{
-        grid-template-columns: repeat(2,1fr);
+
+    .video-content-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .contact-us{
+
+    .contact-us {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -1578,13 +1631,7 @@ html {
     .header-main {
         padding-bottom: 84px;
     }
-    .header-main-h1{
-        font-size: 2.8rem;
-        font-weight: 600;
-    }
-    .header-logo{
-        padding-right: 1%;
-    }
+
     .schema-work-title-h1,
     .payment-title-h1,
     .review-title-h3,
@@ -1592,18 +1639,18 @@ html {
         font-size: 3.2rem;
     }
 
-    .header-content,.header-nav {
+    .header-content, .header-nav {
         display: none;
     }
+
     .header-airplane {
         width: 82%;
         bottom: 5px;
-        right: 28px;
     }
+
     .btn-header-main {
         width: 100%;
         padding: 10px;
-        background-color: #45B2F1;
     }
 
     .header-main-blocks {
@@ -1611,68 +1658,48 @@ html {
         padding-top: 25px;
     }
 
-    .header-main-desc {
-        max-width: 100%;
-        font-size: 1.4rem;
-    }
-
     .header-main-block {
         width: 100%;
         gap: 10px;
-        padding:5px 0 5px 20px;
-    }
-
-    .service-title {
-        font-size: 2.4rem;
-    }
-    .service-title span{
-
+        padding: 5px 0 5px 20px;
     }
 
     .service-info-task {
         max-width: 100%;
     }
-
-    .service-info-task-p {
-        font-size: 1.6rem;
-    }
-    .payment-icon{
+    .payment-icon {
         padding: 5px;
         justify-content: center;
     }
-    .payment{
+
+    .payment {
         width: 42%;
     }
-    .payment-icon-img{
+
+    .payment-icon-img {
         width: 70%;
     }
 
-    .talon-grid{
-        grid-auto-rows: 450px;
-    }
-    .talon-section{
+    .talon-section {
         padding-top: 0;
         padding-bottom: 5rem;
     }
-    .talon-buttons{
+
+    .talon-buttons {
         width: 100%;
-        gap:10px;
+        gap: 10px;
     }
-    .btn-talon-order,.btn-talon-details{
+
+    .btn-talon-order, .btn-talon-details {
         padding: 12px 0;
     }
+
     .form {
         width: 84%;
         padding: 20px;
     }
 
-    .service-form-h2 {
-        font-size: 2rem;
-    }
 
-    .service-form-info {
-        font-size: 1.3rem;
-    }
 
     .service-input {
         padding: 10px;
@@ -1683,7 +1710,8 @@ html {
     .schema-work-process-grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    .schema{
+
+    .schema {
         border-left: none;
         border-bottom: 1px solid var(--text-dark-grey);
     }
@@ -1696,9 +1724,11 @@ html {
         font-size: 1.3rem;
         max-width: 100%;
     }
-    .schema-work{
+
+    .schema-work {
         gap: 30px;
     }
+
     .btn-service {
         padding: 12px 0;
     }
@@ -1706,16 +1736,20 @@ html {
     .payment-title-p {
         font-size: 1.3rem;
     }
-    .talon-card-h4{
+
+    .talon-card-h4 {
         font-size: 20px;
     }
-    .talon-card{
+
+    .talon-card {
         width: 91%;
     }
-    .talon-card-p{
+
+    .talon-card-p {
         font-size: 13px;
     }
-    .service-section{
+
+    .service-section {
         padding-bottom: 2rem;
     }
 
@@ -1724,7 +1758,6 @@ html {
     }
 
     .avia-section-grid {
-        grid-template-columns: repeat(1, 1fr);
         gap: 15px;
         grid-auto-rows: 123px;
     }
@@ -1739,7 +1772,7 @@ html {
     }
 
     .video-review-section {
-        padding-top: 30rem;
+        padding-top: 40rem;
     }
 
     .video-content-grid {
@@ -1753,9 +1786,11 @@ html {
     }
 
     .footer-menu-flex {
+        padding-top: 10px;
         gap: 10px;
     }
-    .footer-airplane{
+
+    .footer-airplane {
         display: none;
     }
 
