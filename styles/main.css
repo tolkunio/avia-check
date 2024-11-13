@@ -904,7 +904,7 @@ html {
 
 /*video-reviews*/
 .video-review-section {
-    padding-top: 12rem;
+    padding-top: 20rem;
 }
 
 .video-content-grid {
@@ -1134,7 +1134,7 @@ html {
 
 @media screen and (max-width: 1400px) {
     .container {
-        max-width: 98%;
+        max-width: 95%;
     }
     .header-input {
         display: none;
@@ -1213,7 +1213,6 @@ html {
     .payment-icon {
         padding: 6px 30px;
     }
-
     .schema-work-process-grid {
         grid-template-columns: repeat(4, 1fr)
     }
@@ -1468,6 +1467,16 @@ html {
     }
     .footer-wrapper{
         padding-bottom: 1rem;
+    }
+    .footer-airplane {
+        width: 27%;
+        top: 75px;
+    }
+    .video-review-section{
+        padding-top: 25rem;
+    }
+    .btn-contact{
+        padding: 0 1.2rem 0 1.2rem;
     }
 }
 
