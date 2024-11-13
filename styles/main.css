@@ -543,7 +543,8 @@ html {
 .talon-grid {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
-    gap: 20px;
+    gap: 50px;
+    grid-auto-rows: 538px;
 }
 
 .talon-card {
@@ -555,7 +556,9 @@ html {
     color: var(--main-white);
     border-left: 1px solid var(--main-white);
 }
-
+.first{
+    padding-top: 7.5rem;
+}
 .talon-card-h4 {
     font-size: 32px;
     font-weight: 500;
@@ -571,45 +574,20 @@ html {
 }
 
 .talon-img-first {
-    clip-path: polygon(0 0, 100% 0%, 100% 58%, 0 56%);
-    z-index: 1;
-    position: absolute;
-    top: 215px;
-    left: 40px;
-    width: 85%;
+   max-width: 100%;
 }
 
 .talon-img-second {
     clip-path: polygon(1% 0, 100% 0%, 100% 52%, 0 48%);
-    position: absolute;
-    top: 205px;
-    left: 40px;
-    width: 80%;
 }
 
 .talon-img-third {
     clip-path: polygon(1% 0, 100% 0%, 100% 60%, 0 59%);
-    z-index: 1;
-    position: absolute;
-    top: 215px;
-    left: 40px;
-    width: 80%;
 }
 
 .talon-buttons {
-    padding-top: 20rem;
-    padding-bottom: 4rem;
-    z-index: 2;
     display: flex;
     gap: 20px;
-}
-
-.first {
-    margin-top: 40px;
-}
-
-.third {
-    padding-top: 18rem;
 }
 
 .plus-icon {
@@ -677,11 +655,6 @@ html {
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
-
-.avia-section-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .schema {
     padding: 19px 15px 21px 19px;
     display: flex;
@@ -736,6 +709,7 @@ html {
     align-items: center;
     padding: 6px 43px;
     background-color: #FBF7F1;
+    border-radius: 12px;
 }
 
 /*avia*/
@@ -1158,9 +1132,6 @@ html {
         padding: 20px 0 0 15px;
     }
 
-    .third {
-        padding-top: 14.3rem;
-    }
 
     .btn-talon-order {
         padding: 18px 40px;
@@ -1235,10 +1206,6 @@ html {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .talon-img-first {
-        top: 190px;
-    }
-
     .talon-img-second {
         top: 168px;
     }
@@ -1247,9 +1214,6 @@ html {
         top: 190px;
     }
 
-    .third {
-        padding-top: 22rem;
-    }
 
     .contact-title-1, .contact-title-2 {
         font-size: 6rem;
@@ -1294,9 +1258,6 @@ html {
         display: none;
     }
 
-    .third {
-        padding-top: 23rem;
-    }
 
     .review-wrapper {
         grid-template-columns: 1fr;
@@ -1336,6 +1297,9 @@ html {
 
     .form {
         width: 50%;
+    }
+    .review-content-grid{
+        grid-auto-rows: 50%;
     }
 }
 
@@ -1383,16 +1347,6 @@ html {
         text-align: center;
         font-size: 2rem;
         width: 100%;
-    }
-
-    .schema-work-process-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .talon-img-first {
-        width: 75%;
-        top: 180px;
-        left: 44px;
     }
 
     .talon-img-second {
@@ -1460,7 +1414,7 @@ html {
         flex-direction: column;
     }
     .avia-section-grid{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .footer{
         padding-top: 3rem;
@@ -1530,6 +1484,9 @@ html {
         padding-left: 1rem;
         padding-bottom: 1rem;
     }
+    .review-content-grid{
+        grid-auto-rows: 38%;
+    }
 
     .form {
         width: 70%;
@@ -1537,21 +1494,14 @@ html {
     .talon-card{
         width: 90%;
     }
-    .talon-img-first {
-        width: 85%;
-    }
-    .talon-img-third{
-        width: 80%;
-    }
-    .talon-buttons{
-        padding-top: 18rem;
-        padding-bottom: 2rem;
-    }
     .schema-work-process-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     .schema-wrapper {
         gap: 4rem;
+    }
+    .avia-company {
+        width: 100%;
     }
 
     .talon-grid {
@@ -1604,9 +1554,6 @@ html {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-    .schema-work-process-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .footer-wrapper {
         grid-template-columns: repeat(1, 1fr);
@@ -1628,26 +1575,35 @@ html {
 }
 
 @media screen and (max-width: 375px ) {
-    .header-main-h1 {
+    .header-main {
+        padding-bottom: 84px;
+    }
+    .header-main-h1{
         font-size: 2.8rem;
+        font-weight: 600;
+    }
+    .header-logo{
+        padding-right: 1%;
+    }
+    .schema-work-title-h1,
+    .payment-title-h1,
+    .review-title-h3,
+    .avia-section-title {
+        font-size: 3.2rem;
     }
 
-    .header-content {
+    .header-content,.header-nav {
         display: none;
     }
-
-    .header-nav {
-        display: none;
-    }
-
-    .btn-header-main {
-        width: 70%;
-        padding: 10px;
-    }
-
     .header-airplane {
-        width: 58%;
-        bottom: 8px;
+        width: 82%;
+        bottom: 5px;
+        right: 28px;
+    }
+    .btn-header-main {
+        width: 100%;
+        padding: 10px;
+        background-color: #45B2F1;
     }
 
     .header-main-blocks {
@@ -1657,16 +1613,20 @@ html {
 
     .header-main-desc {
         max-width: 100%;
+        font-size: 1.4rem;
     }
 
     .header-main-block {
-        width: 93%;
+        width: 100%;
         gap: 10px;
-        padding: 5px;
+        padding:5px 0 5px 20px;
     }
 
     .service-title {
         font-size: 2.4rem;
+    }
+    .service-title span{
+
     }
 
     .service-info-task {
@@ -1676,7 +1636,31 @@ html {
     .service-info-task-p {
         font-size: 1.6rem;
     }
+    .payment-icon{
+        padding: 5px;
+        justify-content: center;
+    }
+    .payment{
+        width: 42%;
+    }
+    .payment-icon-img{
+        width: 70%;
+    }
 
+    .talon-grid{
+        grid-auto-rows: 450px;
+    }
+    .talon-section{
+        padding-top: 0;
+        padding-bottom: 5rem;
+    }
+    .talon-buttons{
+        width: 100%;
+        gap:10px;
+    }
+    .btn-talon-order,.btn-talon-details{
+        padding: 12px 0;
+    }
     .form {
         width: 84%;
         padding: 20px;
@@ -1699,21 +1683,24 @@ html {
     .schema-work-process-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+    .schema{
+        border-left: none;
+        border-bottom: 1px solid var(--text-dark-grey);
+    }
 
     .schema-work-title {
         gap: 20px;
     }
 
     .schema-work-title-p {
-        width: 100%;
+        font-size: 1.3rem;
+        max-width: 100%;
     }
-
+    .schema-work{
+        gap: 30px;
+    }
     .btn-service {
         padding: 12px 0;
-    }
-
-    .payment-title-h1 {
-        font-size: 3.2rem;
     }
 
     .payment-title-p {
@@ -1731,36 +1718,9 @@ html {
     .service-section{
         padding-bottom: 2rem;
     }
-    .talon-img-first {
-        width: 71%;
-        left: 28px;
-    }
-    .talon-img-second{
-        top: 163px;
-        left: 53px;
-    }
-    .talon-img-third{
-        top: 180px;
-        left: 55px;
-    }
-    .third {
-        padding-top: 12rem;
-    }
-    .talon-buttons{
-        padding-top: 13rem;
-        flex-direction: column;
-    }
-    .payments-icons {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
-    }
 
     .avia-section {
         padding-top: 5rem;
-    }
-
-    .avia-section-title {
-        font-size: 3.2rem;
     }
 
     .avia-section-grid {
@@ -1778,12 +1738,8 @@ html {
         padding: 10px 20px 15px;
     }
 
-    .review-title-h3, .review-title-h3 {
-        font-size: 3.2rem;
-    }
-
     .video-review-section {
-        padding-top: 16rem;
+        padding-top: 30rem;
     }
 
     .video-content-grid {
