@@ -233,7 +233,7 @@ html {
     color: var(--main-blue);
     border-radius: 4px;
     font-weight: 500;
-    padding: 10px 36px;
+    padding: 10px 30px;
     background: transparent;
 }
 
@@ -1128,6 +1128,7 @@ html {
     font-size: 12px;
     color: #BDBDBD;
     font-weight: 400;
+    padding-bottom: 3rem;
 
 }
 
@@ -1364,46 +1365,47 @@ html {
     .header-main {
         align-items: center;
         max-width: 100%;
-        padding-bottom: 220px
+        padding-bottom: 120px;
     }
 
     .header-airplane {
         bottom: 6px;
         right: 78px;
     }
+    .schema-section{
+        padding-top: 3rem;
+    }
 
     .schema-work-title {
         flex-direction: column;
         gap: 20px;
+    }
+    .schema-work-title-p{
+        text-align: center;
+        font-size: 2rem;
+        width: 100%;
     }
 
     .schema-work-process-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .talon-grid {
-        justify-items: center; /* Центрирование по горизонтали */
-        align-items: center;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 70px;
-    }
-
     .talon-img-first {
-        width: 70%;
+        width: 75%;
         top: 180px;
-        left: 101px;
+        left: 44px;
     }
 
     .talon-img-second {
         width: 65%;
-        top: 154px;
-        left: 101px;
+        top: 182px;
+        left:73px;
     }
 
     .talon-img-third {
         width: 70%;
-        top: 170px;
-        left: 101px;
+        top: 200px;
+        left: 33px;
     }
 
     .schema-wrapper {
@@ -1420,12 +1422,19 @@ html {
 
     .payment-title-p {
         max-width: 100%;
+        padding-bottom: 10px;
     }
 
     .payments-icons {
         gap: 25px;
     }
-
+    .avia-section, .review-section, .faq-section{
+        padding-top: 6rem;
+    }
+    .contact-us {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     .service-desc {
         padding-left: 1rem;
     }
@@ -1444,9 +1453,21 @@ html {
 
     .talon-card {
         align-items: center;
-        width: 64%;
-        border-right: 1px solid var(--main-white);
+        width: 100%;
         padding: 20px 20px 0 15px;
+    }
+    .talon-buttons{
+        width: 80%;
+        flex-direction: column;
+    }
+    .avia-section-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        padding-top: 3rem;
+    }
+    .footer-wrapper{
+        padding-bottom: 1rem;
     }
 }
 
@@ -1502,27 +1523,37 @@ html {
     }
 
     .form {
-        width: 60%;
+        width: 70%;
     }
-
+    .talon-card{
+        width: 90%;
+    }
+    .talon-img-first {
+        width: 85%;
+    }
+    .talon-img-third{
+        width: 80%;
+    }
+    .talon-buttons{
+        padding-top: 18rem;
+        padding-bottom: 2rem;
+    }
     .schema-work-process-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .schema-wrapper {
+        gap: 4rem;
+    }
 
     .talon-grid {
-        gap: 25px;
+        justify-items: center; /* Центрирование по горизонтали */
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
     }
-
-    .talon-img-first {
-        width: 70%;
-    }
-
-    .talon-img-second {
-        width: 70%;
-    }
-
-    .talon-img-third {
-        width: 70%;
+    .payments-icons{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .btn-contact {
@@ -1551,9 +1582,19 @@ html {
     }
 
     .header-main {
-        padding-bottom: 45px;
+        padding-bottom: 145px;
     }
-
+    .header-main-desc{
+        width: 100%;
+    }
+    .btn-header-main{
+        width: 45%;
+        padding: 14px 8px;
+    }
+    .service-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     .schema-work-process-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1567,6 +1608,14 @@ html {
     .footer-form {
         display: none;
     }
+    .video-content-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contact-us{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 375px ) {
@@ -1740,6 +1789,9 @@ html {
 
     .footer-menu-flex {
         gap: 10px;
+    }
+    .footer-airplane{
+        display: none;
     }
 
 }
