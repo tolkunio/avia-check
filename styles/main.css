@@ -107,10 +107,11 @@ html {
     display: flex;
     align-items: center;
     gap: 7px;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 .header-contact:hover{
-    transform: scale(1.2);
+    color: var(--main-blue);
+    transform: scale(1.1);
 }
 
 .header-icons {
@@ -130,7 +131,7 @@ html {
     transition: all 0.3s ease;
 }
 .header-circle:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
     background-color: #DEEAFB;
 }
 .burger-btn {
@@ -267,7 +268,7 @@ html {
     flex-direction: column;
 }
 
-.header-main-h1 {
+.header-main-h6 {
     font-size: 5rem;
     line-height: 120%;
     font-weight: 500;
@@ -292,11 +293,13 @@ html {
     padding: 15px 12px;
     border-radius: 10px;
     background-color: #EEF4FB;
-    font-size: 1.6rem;
-    font-weight: 500;
     color: #3B3D40;
     line-height: 120%;
     transition: all .5s ease;
+}
+.header-main-h1{
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 .header-main-block:hover{
     transform: scale(1.1);
@@ -413,6 +416,7 @@ html {
 
 .service-info-task-p {
     font-size: 2.4rem;
+    font-weight: 400;
 }
 
 .service-list {
@@ -424,7 +428,7 @@ html {
 }
 
 .service-item {
-
+    font-weight: 500;
 }
 
 .form {
@@ -570,7 +574,7 @@ html {
 }
 
 .talon-section {
-    padding-top: 31px;
+    padding: 30px 0 0 0;
     background-color: var(--main-blue);
 }
 
@@ -595,7 +599,7 @@ html {
     padding-top: 7.5rem;
 }
 
-.talon-card-h4 {
+.talon-card-h2 {
     font-size: 32px;
     font-weight: 500;
     line-height: 120%;
@@ -603,10 +607,15 @@ html {
     padding-bottom: 16px;
 }
 
-.talon-card-p {
+.talon-card-h6 {
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
+    height: 25%;
+}
+.talon-card-img{
+    width: 400px;
+    height: 200px;
 }
 .talon-img{
     width: 252px;
@@ -676,13 +685,13 @@ html {
     justify-content: space-between;
 }
 
-.schema-work-title-h1 {
+.schema-work-title-h2 {
     font-size: 4.8rem;
     font-weight: 500;
     line-height: 120%;
 }
 
-.schema-work-title-p {
+.schema-work-title-h6 {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 120%;
@@ -723,13 +732,13 @@ html {
     gap: 12px;
 }
 
-.payment-title-h1 {
+.payment-title-h2 {
     font-size: 4.8rem;
     font-weight: 500;
     line-height: 120%;
 }
 
-.payment-title-p {
+.payment-title-h6 {
     font-size: 2rem;
     font-weight: 400;
     line-height: 120%;
@@ -831,7 +840,7 @@ html {
     justify-content: space-between;
 }
 
-.review-title-h3 {
+.review-title-h2 {
     font-size: 48px;
     font-weight: 500;
     color: var(--text-black);
@@ -1143,8 +1152,11 @@ iframe {
     border: none;
     border-radius: 50%;
     padding: 0 3.2rem 0 3.2rem;
+    transition: all .3s ease;
 }
-
+.btn-contact:hover{
+    background-color: #48B3EA;
+}
 /*footer*/
 .footer {
     padding-top: 6rem;
@@ -1183,6 +1195,10 @@ iframe {
     display: flex;
     align-items: center;
     gap: 7px;
+    color: var(--main-white);
+}
+.footer-mail:hover{
+    color: var(--main-blue);
 }
 
 .footer-icons {
@@ -1206,6 +1222,12 @@ iframe {
     display: flex;
     flex-direction: column;
     gap: 24px
+}
+.footer-main-flex a{
+    color: var(--main-white);
+}
+.footer-main-flex a:hover{
+    color: var(--main-blue);
 }
 
 .footer-form {
@@ -1234,6 +1256,11 @@ iframe {
     font-weight: 500;
     padding: 10px 36px;
     background: var(--main-blue);
+    transition: all .3s ease;
+}
+.form-btn:hover{
+    background-color: #48B3EA;
+    border: none;
 }
 
 .copyright {
@@ -1311,7 +1338,7 @@ iframe {
         max-width: 96%;
     }
 
-    .header-main-h1 {
+    .header-main-h6 {
         font-size: 4.5rem;
     }
 
@@ -1372,7 +1399,7 @@ iframe {
         right: 35px
     }
 
-    .header-main-h1 {
+    .header-main-h6 {
         font-size: 3.5rem;
     }
 
@@ -1447,7 +1474,7 @@ iframe {
         display: none;
     }
 
-    .header-main-h1 {
+    .header-main-h6 {
         text-align: center;
     }
 
@@ -1480,7 +1507,7 @@ iframe {
         gap: 20px;
     }
 
-    .schema-work-title-p {
+    .schema-work-title-h6 {
         text-align: center;
         font-size: 2rem;
         width: 100%;
@@ -1498,7 +1525,7 @@ iframe {
         align-items: center;
     }
 
-    .payment-title-p {
+    .payment-title-h6 {
         max-width: 100%;
         padding-bottom: 10px;
     }
@@ -1708,7 +1735,7 @@ iframe {
         right: 28px;
     }
 
-    .header-main-h1 {
+    .header-main-h6 {
         font-size: 2.8rem;
         font-weight: 600;
     }
@@ -1772,9 +1799,9 @@ iframe {
         padding-bottom: 84px;
     }
 
-    .schema-work-title-h1,
-    .payment-title-h1,
-    .review-title-h3,
+    .schema-work-title-h2,
+    .payment-title-h2,
+    .review-title-h2,
     .avia-section-title {
         font-size: 3.2rem;
     }
@@ -1858,7 +1885,7 @@ iframe {
         gap: 20px;
     }
 
-    .schema-work-title-p {
+    .schema-work-title-h6 {
         font-size: 1.3rem;
         max-width: 100%;
     }
@@ -1871,11 +1898,11 @@ iframe {
         padding: 12px 0;
     }
 
-    .payment-title-p {
+    .payment-title-h6 {
         font-size: 1.3rem;
     }
 
-    .talon-card-h4 {
+    .talon-card-h2 {
         font-size: 20px;
     }
 
@@ -1883,7 +1910,7 @@ iframe {
         width: 91%;
     }
 
-    .talon-card-p {
+    .talon-card-h6 {
         font-size: 13px;
     }
 
