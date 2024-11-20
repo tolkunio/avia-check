@@ -107,6 +107,10 @@ html {
     display: flex;
     align-items: center;
     gap: 7px;
+    transition: all 0.5s ease;
+}
+.header-contact:hover{
+    transform: scale(1.2);
 }
 
 .header-icons {
@@ -123,8 +127,12 @@ html {
     height: 36px;
     background-color: #ECECED;
     border-radius: 50%;
+    transition: all 0.3s ease;
 }
-
+.header-circle:hover{
+    transform: scale(1.3);
+    background-color: #DEEAFB;
+}
 .burger-btn {
     display: none;
     box-sizing: border-box;
@@ -161,6 +169,10 @@ html {
     color: var(--text-dark-grey);
     line-height: 120%;
     font-weight: 500;
+    transition: all .5s ease-in-out;
+}
+.header-nav-link:hover{
+    color: var(--main-blue);
 }
 
 .header-mobile-nav {
@@ -239,6 +251,12 @@ html {
     font-weight: 500;
     padding: 10px 30px;
     background: transparent;
+    transition: all .5s ease;
+}
+.btn-header:hover{
+    border: none;
+    color:var(--main-white);
+    background-color: var(--main-blue);
 }
 
 .header-main {
@@ -278,7 +296,13 @@ html {
     font-weight: 500;
     color: #3B3D40;
     line-height: 120%;
+    transition: all .5s ease;
 }
+.header-main-block:hover{
+    transform: scale(1.1);
+    color: var(--main-blue);
+}
+
 
 .header-block-circle {
     display: flex;
@@ -320,6 +344,9 @@ html {
     border-radius: 4px;
     color: var(--main-white);
     padding: 18px 40px;
+}
+.btn-header-main:hover{
+    background-color: #48B3EA;
 }
 
 .header-airplane {
@@ -445,6 +472,9 @@ html {
     padding: 18px 0;
     background-color: var(--main-yellow);
     font-weight: 400;
+}
+.btn-service:hover{
+    background-color: #FBF0B3;
 }
 
 .checkbox-block {
@@ -603,8 +633,11 @@ html {
     border: none;
     font-weight: 500;
     padding: 18px 50px;
+    transition: all .3s ease;
 }
-
+.btn-talon-order:hover{
+    background-color: var(--text-dark-grey);
+}
 .btn-talon-details {
     border-radius: 4px;
     background-color: transparent;
@@ -612,6 +645,12 @@ html {
     font-weight: 500;
     border: 1px solid var(--text-black);
     padding: 18px 50px;
+    transition: all .3s ease;
+}
+.btn-talon-details:hover{
+    background-color: var(--text-black);
+    color: var(--main-white);
+    border: 1px solid var(--text-black);
 }
 
 /*schema*/
@@ -737,6 +776,10 @@ html {
 .avia-company {
     border-radius: 12px;
     background-color: rgba(251, 247, 241, .5);
+    transition: all .3s ease;
+}
+.avia-company:hover{
+    transform: scale(1.1);
 }
 
 .avia-img {
@@ -756,7 +799,17 @@ html {
     padding: 21px 26px 27px;
     background-color: rgba(231, 231, 231, .5);
 }
+.avia-company-link{
+    display: block;
+    position: relative;
+}
 
+.arrow-icon{
+    color: #888369;
+}
+.avia-company-title:hover,.arrow-icon:hover{
+    color: var(--main-blue);
+}
 .custom-padding {
     padding: 15px 26px 15px;
 }
@@ -889,8 +942,10 @@ html {
 }
 
 .video-content {
+    width: 100%;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .video-content img {
@@ -899,20 +954,105 @@ html {
     display: block;
 }
 
-.play-button {
+
+.modal-trigger {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
     border-radius: 50%;
     width: 107px;
     height: 107px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+.modal-trigger:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.modal-trigger i {
+    color: #333;
+    font-size: 24px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(183,187,197,.7);
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+.video-wrapper{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 /*faq*/
 .faq-section {
     padding-top: 14rem;
@@ -1416,12 +1556,12 @@ html {
     }
 
     .footer-airplane {
-        width: 27%;
-        top: 75px;
+        width: 19%;
+        top: 45px;
     }
 
     .video-review-section {
-        padding-top: 25rem;
+        padding-top: 32rem;
     }
 
     .contact-title-2{
@@ -1527,8 +1667,8 @@ html {
     }
 
     .footer-airplane {
-        width: 27%;
-        top: 36px;
+        width: 17%;
+        top: 29px;
     }
 
     .footer-wrapper {
@@ -1698,8 +1838,6 @@ html {
         width: 84%;
         padding: 20px;
     }
-
-
 
     .service-input {
         padding: 10px;
